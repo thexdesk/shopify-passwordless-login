@@ -1,59 +1,59 @@
 {
-    "name": "shopify-passwordless-login",
-    "version": "1.2.0",
-    "description": "The simplest way to add passwordless authentication to your Shopify store",
-    "source": "src/index.ts",
-    "main": "dist/index.ts",
-    "types": "dist/index.d.ts",
-    "module": "dist/index.module.ts",
-    "unpkg": "dist/index.umd.ts",
-    "repository": "git@github.com:DimensionSoftware/shopify-passwordless-login.git",
-    "author": "Dimension Software <support@dimensionsoftware.com> (https://dimensionsofware.com)",
-    "homepage": "https://github.com/DimensionSoftware/shopify-passwordless-login",
-    "license": "MIT",
-    "private": false,
-    "scripts": {
-        "build": "microbundle src/*",
-        "prepare": "yarn run build",
-        "dev": "microbundle watch src/*"
-    },
-    "files": [
-        "src",
-        "dist"
+  "name": "shopify-passwordless-login",
+  "version": "1.2.0",
+  "description": "The simplest way to add passwordless authentication to your Shopify store",
+  "source": "src/index.ts",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.module.ts",
+  "unpkg": "dist/index.umd.ts",
+  "repository": "git@github.com:DimensionSoftware/shopify-passwordless-login.git",
+  "author": "Dimension Software <support@dimensionsoftware.com> (https://dimensionsofware.com)",
+  "homepage": "https://github.com/DimensionSoftware/shopify-passwordless-login",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "microbundle src/*",
+    "prepare": "yarn run build",
+    "dev": "microbundle watch src/*"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "dependencies": {
+    "node-fetch": "^3.2.10"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.3",
+    "@types/query-string": "^6.3.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "microbundle": "^0.11.0",
+    "prettier": "^1.18.2",
+    "query-string": "^6.8.3",
+    "react": "^16.8.6"
+  },
+  "peerDependencies": {
+    "react": "^16.11.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:prettier/recommended",
+      "plugin:react/recommended"
     ],
-    "dependencies": {
-        "node-fetch": "^3.2.10"
+    "env": {
+      "browser": true,
+      "es6": true
     },
-    "devDependencies": {
-        "@types/node-fetch": "^2.5.3",
-        "@types/query-string": "^6.3.0",
-        "eslint": "^6.6.0",
-        "eslint-config-prettier": "^6.5.0",
-        "eslint-plugin-prettier": "^3.1.1",
-        "eslint-plugin-react": "^7.16.0",
-        "microbundle": "^0.11.0",
-        "prettier": "^1.18.2",
-        "query-string": "^6.8.3",
-        "react": "^16.8.6"
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
     },
-    "peerDependencies": {
-        "react": "^16.11.0"
-    },
-    "eslintConfig": {
-        "extends": [
-            "plugin:prettier/recommended",
-            "plugin:react/recommended"
-        ],
-        "env": {
-            "browser": true,
-            "es6": true
-        },
-        "globals": {
-            "Atomics": "readonly",
-            "SharedArrayBuffer": "readonly"
-        },
-        "parserOptions": {
-            "ecmaVersion": 2018
-        }
+    "parserOptions": {
+      "ecmaVersion": 2018
     }
+  }
 }
